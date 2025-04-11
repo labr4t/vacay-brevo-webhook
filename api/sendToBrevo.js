@@ -17,7 +17,7 @@ export default async function handler(req, res) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "api-key": process.env.BREVO_API_KEY,
+        "api-key": "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",
       },
       body: JSON.stringify({
         email,
@@ -30,7 +30,7 @@ export default async function handler(req, res) {
           PAGE: pageURL,
           SUBMITTED_AT: submissionTime,
         },
-        listIds: [Number(process.env.BREVO_LIST_ID)],
+        listIds: [5],
         updateEnabled: true,
       }),
     });
